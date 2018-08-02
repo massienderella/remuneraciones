@@ -75,5 +75,18 @@ button {
 }
 
 .plan-card {
-  @include plan-card
+  @include plan-card;
+  outline: 1px solid pink;
+}
+
+.card-title {
+  @include card-title
+}
+
+.empleados {
+  @include employees
+}
+
+.precio {
+  @include price
 }
