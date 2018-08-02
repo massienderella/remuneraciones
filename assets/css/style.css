@@ -1,0 +1,38 @@
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Montserrat', sans-serif;
+}
+header, .calculo, .trazabilidad, .gestion, .integracion{
+  height: 100vh;
+  outline: 1px solid red;
+}
+
+ul li {
+  list-style: none;
+  float: right;
+  padding-left: 2em;
+}
+
+.trz-text{
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.cal-img{
+  vertical-align: middle;
+}
+
+header, .trazabilidad, .precios{
+  background: linear-gradient(rgba(0,159,227,1), rgba(0,101,161,1));
+}
+
+.navbar{
+  background-color: white;
+}
+
+button{
+  background-color: #FF9600;
+  border: none;
+  border-radius: 5px;
+}

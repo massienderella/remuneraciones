@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; }
+  body header, body .calculo, body .trazabilidad, body .gestion, body .integracion {
+    height: 100vh; }
+  body ul li {
+    list-style: none;
+    float: right;
+    padding-left: 2em; }
+  body header, body .trazabilidad, body .precios {
+    background: linear-gradient(#009fe3, #0065a1); }
+  body .navbar {
+    background-color: white; }
+  body button {
+    background-color: #FF9600;
+    border: none;
+    border-radius: 5px; }
+
+.main-title {
+  margin-bottom: 1em;
+  font-size: 51px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Montserrat', 'sans-serif';
+  line-height: 51px;
+  text-transform: uppercase; }
+
+.second-title {
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: bold;
+  font-size: 28px;
+  line-height: 34px;
+  align: left;
+  color: #009FE3; }
+
+.second-title-even {
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: bold;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  color: white; }
+
+.description {
+  font-family: 'Open Sans', 'sans-serif';
+  font-style: Regular;
+  font-size: 21px;
+  line-height: 29px;
+  align: left;
+  paragraph-spacing: 32px;
+  color: #909191; }
+
+.description-even {
+  font-family: 'Open Sans', 'sans-serif';
+  font-style: Regular;
+  font-size: 21px;
+  line-height: 29px;
+  text-align: right;
+  paragraph-spacing: 32px;
+  color: white; }
+
+.presentation {
+  vertical-align: middle; }
+
+.light-title {
+  font-weight: 100; }
+
+.fas {
+  display: block; }
+
+button {
+  background-color: #FF9600;
+  outline: none;
+  color: white;
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: 800;
+  display: block;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  padding: 0.4em; }
+
+.presentation {
+  margin-top: 17em; }
+
+.light-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 41px;
+  color: white; }
+
+.plan-card {
+  background-color: white;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=remu.css.map */
