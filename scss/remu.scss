@@ -6,28 +6,36 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 
-  header, .calculo, .trazabilidad, .gestion, .integracion{
+  header, .calculo, .trazabilidad, .gestion, .integracion, .formulario{
     height: 100vh;
   }
+
   ul li {
     list-style: none;
     float: right;
     padding-left: 2em;
+    @include nav-elements
   }
 
   header, .trazabilidad, .precios{
-    background: linear-gradient(rgba(0,159,227,1), rgba(0,101,161,1));
+    background: linear-gradient(to bottom right, rgba(0,216,185,0.5), rgba(0,101,161,0.8));
   }
 
   .navbar{
     background-color: white;
   }
+}
 
-  button{
-    background-color: #FF9600;
-    border: none;
-    border-radius: 5px;
-  }
+.accent-button{
+  @include accent-button
+}
+
+.access {
+  @include access-button
+}
+
+.section-button {
+  @include section-button
 }
 
 .main-title {
@@ -48,22 +56,6 @@ body {
 
 .description-even {
   @include description-even
-}
-
-.presentation{
-  vertical-align: middle;
-}
-
-.light-title{
-  font-weight: 100;
-}
-
-.fas{
-  display: block;
-}
-
-button {
-  @include button
 }
 
 .presentation{
@@ -89,4 +81,51 @@ button {
 
 .precio {
   @include price
+}
+
+.chevron {
+  @include chevron
+}
+
+//formulario
+
+form{
+  background: linear-gradient(to bottom right, rgba(0,216,185,0.5), rgba(0,101,161,0.8));
+  border-radius: 6px;
+}
+
+select, input, textarea{
+  width: 100%;
+  resize: none;
+  border-radius: 6px;
+  border: none
+}
+
+.form-input {
+  @include form-label
+}
+
+input, select{
+  height: 2.5em;
+  color: $grey;
+}
+
+.contact{
+  @include contact
+}
+
+.form-span{
+  color: $teal;
+}
+
+.chao{
+  margin-top: 7em;
+}
+
+.formu{
+  margin-top: 4em;
+}
+
+.send-button{
+  @include send;
 }

@@ -17,22 +17,35 @@
       <a href="" class="navbar-brand"><img src="assets/img/Group.png" alt=""></a>
         <ul>
           <li><button class="access">Acceder</button></li>
-          <li>Precios</li>
-          <li>Características</li>
-          <li>Inicio</li>
+          <li class="nav-element"><a href="#prices">Precios</a></li>
+          <li class="nav-element"><a href="#char">Características</a></li>
+          <li class="nav-element">Inicio</li>
         </ul>
     </nav>
     <div class="presentation">
-    <h1 class="text-center main-title">
+      <div class="row">
+        <div class="offset-1 col-4">
+          <img src="assets/img/mockup-desktop.png" alt="">
+        </div>
+        <div class="col-6">
+          <h1 class="main-title">
+          Despídete del Excel y las planillas eternas<br>
+          </h1>
+          <h2 class="light-title">ahorra hasta un 60% del tiempo en el cálculo de remuneraciones integrando tu control de asistencia</h2>
+          <button class="accent-button">SOLICITAR UNA DEMO</button>
+        <i class="fas fa-chevron-down chevron text-center"></i>
+      </div>
+      </div>
+    <!--<h1 class="main-title">
       Despídete del Excel y las planillas eternas<br>
     </h1>
     <h2 class="light-title">ahorra hasta un 60% del tiempo en el cálculo de remuneraciones integrando tu control de asistencia</h2>
-    <button>SOLICITAR UNA DEMO</button>
-    <i class="fas fa-chevron-down text-center"></i>
+    <button class="accent-button">SOLICITAR UNA DEMO</button>
+    <i class="fas fa-chevron-down chevron text-center"></i>-->
     </div>
   </header>
 
-<section class="calculo">
+  <section class="calculo" id="char">
   <div class="row cont-calculo">
     <div class="col-6 cal-img">
       <img src="assets/img/mockup-horarios.png" alt="">
@@ -44,7 +57,7 @@
       <p class="description">
         Ahórrate horas extras y largas jornadas a la hora de pagar los sueldos de tu empresa. Transforma los reportes de asistencia en liquidaciones de sueldo en cosa de segundos.
       </p>
-      <button>Descubrir más</button>
+      <button class="section-button">Descubrir más</button>
     </div>
   </div>
 </section>
@@ -54,7 +67,7 @@
       <div class="col-6 trz-text align-middle">
         <h3 class="second-title-even">Trazabilidad de las horas canceladas</h3>
         <p class="description-even">Puedes hacer seguimiento de haberes y descuentos de tus empleados, de manera rápida y efectiva con un par de clics.</p>
-        <button>Descubrir más</button>
+        <button class="section-button">Descubrir más</button>
       </div>
       <div class="col-6">
         <img src="assets/img/pantalla2.png" alt="">
@@ -70,7 +83,7 @@
       <div class="col-6">
         <h3 class="second-title">Gestión eficiente del personal</h3>
         <p class="description">Gestiona tu personal de forma eficiente en tiempo real, desde dónde y cuándo lo necesites. Centraliza toda la información en un solo lugar.</p>
-        <button>eeeee</button>
+        <button class="section-button">Descubrir más</button>
     </div>
     </div>
   </section>
@@ -80,19 +93,17 @@
       <img src="" alt="">
     </div>
     <div>
-      <table class="text-center">
-          <tr class="align-middle"><p>Integración directa y completa con</p></tr>
-          <tr class="align-middle"><img src="assets/img/logo-rc.png" alt=""></tr>
-          <tr class="align-middle">De reportes de asistencia a liquidaciones de sueldo en un solo clic</tr>
-          <tr class="align-middle"><button>eeeee</button></tr>
-      </table>
+        <p>Integración directa y completa con</p>
+        <img src="assets/img/logo-rc.png" alt="">
+        <p>De reportes de asistencia a liquidaciones de sueldo en un solo clic</p>
+        <button>Saber más</button>
     </div>
     <div>
       <img src="" alt="">
     </div>
   </section>
 
-  <section class="precios">
+  <section class="precios" id="prices">
     <div>
       <h2 class="text-center">Precios flexibles y a la medida</h2>
       <h3 class="text-center">Simples, únicos e incluyen todo</h3>
@@ -125,7 +136,7 @@
     </div>
 
     <div class="row">
-        <div class="col-4 plan-card">
+      <div class="col plan-card">
           <img src="assets/img/plan4.png" alt="">
           <h3 class="card-title">Plan 1</h3>
           <h6 class="empleados">50-99 empleados</h6>
@@ -133,7 +144,7 @@
           <p>por empleado al mes</p>
           <p>Facturado anualmente</p>
       </div>
-      <div class="col-4 plan-card">
+      <div class="col plan-card">
           <img src="assets/img/plan5.png" alt="">
           <h3 class="card-title">Plan 1</h3>
           <h6 class="empleados">100-199 empleados</h6>
@@ -141,17 +152,93 @@
           <p>por empleado al mes</p>
           <p>Facturado anualmente</p>
       </div>
-      <div class="col-4 plan-card">
+      <div class="col plan-card">
           <img src="assets/img/medida.png" alt="">
           <h3 class="card-title">Plan a la medida</h3>
           <h6 class="empleados">Más de 200 empleados</h6>
-          <button>Descubrir más</button>
+          <button class="section-button">Descubrir más</button>
       </div>
     </div>
   </section>
 
   <section class="formulario">
-
+    <div class="row formu">
+      <div class="offset-2 col-4 formularing">
+        <form action="">
+          <div class="row">
+            <div class="offset-1 col-5">
+              <p class="form-input">Nombre*</p>
+              <input type="text" placeholder="Francisco">
+            </div>
+            <div class="col-5">
+              <p class="form-input">Apellido*</p>
+              <input type="text" placeholder="Calfueque">
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-1 col-5">
+              <p class="form-input">Teléfono*</p>
+              <input type="text" placeholder="+56950303456">
+            </div>
+            <div class="col-5">
+              <p class="form-input">E-mail*</p>
+              <input type="text" placeholder="borisbelmarm@gmail.com">
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-1 col-10">
+              <p class="form-input">Número de trabajadores*</p>
+              <select name="trabajadores">
+                <option value="1-9">1-9</option>
+                <option value="10-19">10-19</option>
+                <option value="20-49">20-49</option>
+                <option value="50-99">50-99</option>
+                <option value="100-199">100-199</option>
+                <option value="medida">Necesito un plan a la medida</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-1 col-10">
+              <p class="form-input">RUT Empresa* (Campo opcional)</p>
+              <input type="text" placeholder="89.754.682-K">
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-1 col-10">
+              <p class="form-input">Nombre empresa* (Campo opcional)</p>
+              <input type="text" placeholder="Nombre empresa">
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-1 col-10">
+              <p class="form-input">¿Cómo se enteró de nosotros?*</p>
+              <select name="acercamiento">
+                <option value="google">Buscando en Google</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-1 col-10">
+              <p class="form-input">Mensaje (Campo opcional)</p>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese su mensaje aquí..."></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-1 col-10">
+              <button class="send-button">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-4 hola">
+        <div class="chao">
+          <h3 class="contact">No sigas desperdiciando recursos, <span class="form-span">automatiza tus remuneraciones hoy mismo</span></h3>
+          <p class="description">Contáctate con nosotros y un ejecutivo se comunicará contigo para ayudar a tu empresa con su gestión de personal</p>
+          <img src="assets/img/mockup-horarios2.png" alt="" class="form-img">
+        </div>
+      </div>
+    </div>
   </section>
 
   <footer>

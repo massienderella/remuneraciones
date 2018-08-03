@@ -1,46 +1,98 @@
+/*turquesa 0 216 185
+violeta 155 81 224
+naranjo 255 170 0
+cyan 0 159 227 PARA all
+
+direccion con variable*/
 body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif; }
-  body header, body .calculo, body .trazabilidad, body .gestion, body .integracion {
+  body header, body .calculo, body .trazabilidad, body .gestion, body .integracion, body .formulario {
     height: 100vh; }
   body ul li {
     list-style: none;
     float: right;
-    padding-left: 2em; }
+    padding-left: 2em;
+    text-decoration-color: none;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    vertical-align: middle;
+    color: #909191 !important; }
   body header, body .trazabilidad, body .precios {
-    background: linear-gradient(#009fe3, #0065a1); }
+    background: linear-gradient(to bottom right, rgba(0, 216, 185, 0.5), rgba(0, 101, 161, 0.8)); }
   body .navbar {
     background-color: white; }
-  body button {
-    background-color: #FF9600;
-    border: none;
-    border-radius: 5px; }
+
+.accent-button {
+  background-color: #FFAA00;
+  color: white;
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: bold;
+  display: block;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  padding: 0.4em;
+  border-radius: 5px;
+  border: none; }
+
+.access {
+  background-color: #00D8B9;
+  color: white;
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: bold;
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  padding: 0.4em;
+  border-radius: 5px;
+  border: none; }
+
+.section-button {
+  background-color: #9B51E0;
+  color: white;
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: bold;
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  padding: 0.4em;
+  border-radius: 5px;
+  border: none; }
 
 .main-title {
   margin-bottom: 1em;
-  font-size: 51px;
   color: white;
-  font-weight: bold;
   font-family: 'Montserrat', 'sans-serif';
-  line-height: 51px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 48px; }
 
 .second-title {
   font-family: 'Montserrat', 'sans-serif';
-  font-style: bold;
+  font-style: bolder;
   font-size: 28px;
   line-height: 34px;
-  align: left;
-  color: #009FE3; }
+  text-align: left;
+  color: #009FE3;
+  text-transform: uppercase; }
 
 .second-title-even {
   font-family: 'Montserrat', 'sans-serif';
-  font-style: bold;
+  font-style: bolder;
   font-size: 28px;
   line-height: 34px;
   text-align: right;
-  color: white; }
+  color: white;
+  text-transform: uppercase; }
 
 .description {
   font-family: 'Open Sans', 'sans-serif';
@@ -49,7 +101,8 @@ body {
   line-height: 29px;
   align: left;
   paragraph-spacing: 32px;
-  color: #909191; }
+  color: #909191;
+  margin-top: 1.25em; }
 
 .description-even {
   font-family: 'Open Sans', 'sans-serif';
@@ -58,28 +111,8 @@ body {
   line-height: 29px;
   text-align: right;
   paragraph-spacing: 32px;
-  color: white; }
-
-.presentation {
-  vertical-align: middle; }
-
-.light-title {
-  font-weight: 100; }
-
-.fas {
-  display: block; }
-
-button {
-  background-color: #FFAA00;
-  outline: none;
   color: white;
-  font-family: 'Montserrat', 'sans-serif';
-  font-style: 800;
-  display: block;
-  font-size: 28px;
-  line-height: 34px;
-  text-align: center;
-  padding: 0.4em; }
+  margin-top: 1.25em; }
 
 .presentation {
   margin-top: 17em; }
@@ -88,7 +121,8 @@ button {
   text-transform: uppercase;
   text-align: center;
   font-size: 41px;
-  color: white; }
+  color: white;
+  font-weight: lighter; }
 
 .plan-card {
   background-color: white;
@@ -117,5 +151,64 @@ button {
   line-height: 39px;
   text-align: center;
   color: #00D8B9; }
+
+.chevron {
+  font-size: 36px;
+  text-align: center;
+  color: white; }
+
+form {
+  background: linear-gradient(to bottom right, rgba(0, 216, 185, 0.5), rgba(0, 101, 161, 0.8));
+  border-radius: 6px; }
+
+select, input, textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 6px;
+  border: none; }
+
+.form-input {
+  margin-top: 16px;
+  margin-bottom: 0rem;
+  color: white; }
+
+input, select {
+  height: 2.5em;
+  color: #909191; }
+
+.contact {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #009FE3; }
+
+.form-span {
+  color: #00D8B9; }
+
+.chao {
+  margin-top: 7em; }
+
+.formu {
+  margin-top: 4em; }
+
+.send-button {
+  background-color: #FFAA00;
+  color: white;
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: bold;
+  text-transform: uppercase;
+  display: block;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  padding: 0.4em;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 1em; }
 
 /*# sourceMappingURL=remu.css.map */

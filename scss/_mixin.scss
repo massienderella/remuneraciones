@@ -1,29 +1,33 @@
 @mixin main-title {
   margin-bottom: 1em;
-  font-size: 51px;
   color: white;
-  font-weight: bold;
   font-family: 'Montserrat', 'sans-serif';
-  line-height: 51px;
   text-transform: uppercase;
+  text-align: left;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 48px;
 }
 
 @mixin secondary-title {
   font-family: 'Montserrat', 'sans-serif';
-  font-style: bold;
+  font-style: bolder;
   font-size: 28px;
   line-height: 34px;
-  align: left;
+  text-align: left;
   color: $light-blue;
+  text-transform: uppercase;
 }
 
 @mixin secondary-title-even {
   font-family: 'Montserrat', 'sans-serif';
-  font-style: bold;
+  font-style: bolder;
   font-size: 28px;
   line-height: 34px;
   text-align: right;
   color: white;
+  text-transform: uppercase;
 }
 
 @mixin description {
@@ -34,6 +38,7 @@
   align: left;
   paragraph-spacing: 32px;
   color: $grey;
+  margin-top: 1.25em;
 }
 
 @mixin description-even {
@@ -44,19 +49,49 @@
   text-align: right;
   paragraph-spacing: 32px;
   color: white;
+  margin-top: 1.25em;
 }
 
-@mixin button{
+@mixin accent-button{
   background-color: $orange;
-  outline: none;
   color: white;
   font-family: 'Montserrat', 'sans-serif';
-  font-style: 800;
+  font-style: bold;
   display: block;
   font-size: 28px;
   line-height: 34px;
   text-align: center;
   padding: 0.4em;
+  border-radius: 5px;
+  border: none;
+}
+
+@mixin access-button {
+  background-color: $turquesa;
+  color: white;
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: bold;
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  padding: 0.4em;
+  border-radius: 5px;
+  border: none;
+}
+
+@mixin section-button {
+  background-color: $violeta;
+  color: white;
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: bold;
+  display: block;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  padding: 0.4em;
+  border-radius: 5px;
+  border: none;
 }
 
 @mixin light-title{
@@ -64,6 +99,7 @@
   text-align: center;
   font-size: 41px;
   color: white;
+  font-weight: lighter;
 }
 
 @mixin plan-card{
@@ -72,27 +108,77 @@
 }
 
 @mixin card-title{
-font-family: 'Montserrat';
-font-weight: 800;
-font-size: 24px;
-line-height: 29px;
-text-align: center;
-color: $deep-grey;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: $deep-grey;
 }
 
 @mixin employees {
-font-family: 'Montserrat';
-font-size: 14px;
-line-height: 20px;
-text-align: center;
-color: $deep-grey;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $deep-grey;
 }
 
 @mixin price {
-font-family: 'Montserrat';
-font-weight: bolder;
-font-size: 32px;
-line-height: 39px;
-text-align: center;
-color: $turquesa;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: $turquesa;
+}
+
+@mixin nav-elements {
+  text-decoration-color: none;
+  font-family: 'Open Sans';
+  font-size: 24px;
+  line-height: 33px;
+  text-align: center;
+  vertical-align: middle;
+  color: $grey !important;
+}
+
+@mixin chevron {
+  font-size: 36px;
+  text-align: center;
+  color: white;
+}
+
+@mixin form-label{
+  margin-top: 16px;
+  margin-bottom: 0rem;
+  color: white;
+}
+
+@mixin contact {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $light-blue;
+}
+
+@mixin send {
+  background-color: $orange;
+  color: white;
+  font-family: 'Montserrat', 'sans-serif';
+  font-style: bold;
+  text-transform: uppercase;
+  display: block;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  padding: 0.4em;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
